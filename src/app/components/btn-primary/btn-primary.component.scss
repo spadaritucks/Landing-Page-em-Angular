@@ -1,0 +1,40 @@
+@import '../../../color-variables.scss';
+.btn {
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+
+    &.disabled {
+        opacity: 0.6;
+
+    }
+
+    &.primary {
+        color: white;
+        background: linear-gradient(180deg, $primary-color, $secondary-color );
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &.secondary {
+        color: $primary-text;
+        background: white;
+        font-size: 16px;
+
+    }
+
+    @media (min-width: 1080px){ 
+
+        .btn{
+            padding: 20px 40px;
+        }
+        &.primary{
+            font-size: 24px;
+        }
+
+        &.secondary{
+            font-size: 16px;
+        }
+    }
+}
