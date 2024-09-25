@@ -84,6 +84,15 @@ main{
     }
 }
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100;
+    
+}
+
 
 @media (min-width: 1080px){
     .main-section{
@@ -92,5 +101,10 @@ main{
 
     .benefit-section{
         flex-direction: row;
+    }
+
+    .cards{
+        flex-direction: row;
+        gap: 120px;
     }
 }

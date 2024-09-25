@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    background: $secondary-color;
+    background: $bg-secondary-color;
     padding: 40px 70px;
     color: white;
 
@@ -42,6 +42,7 @@
             width: 100%;
             height: 60px;
             margin-bottom: 40px;
+            color: white;
         }
       
     }
@@ -57,7 +58,7 @@
         flex-direction: flex-start;
         gap: 115px;
         padding: 40px 120px;
-        background: $bg-secondary-color;
+       
 
     }
 }

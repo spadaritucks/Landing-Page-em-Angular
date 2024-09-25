@@ -5,13 +5,13 @@
     </div>
 
     
-<form >
-    <label for="name">Name</label>
-    <input id="name" />
-    <label for="email" >Email</label>
-    <input id="email"/>
-    <btn-primary variant="secondary" btn-text="se inscreva"></btn-primary>
-</form>
+    <form [formGroup]="newsLetterForm" >
+        <label for="name">Name</label>
+        <input id="name" formControlName="name"/>
+        <label for="email" >Email</label>
+        <input id="email" formControlName="email"/>
+        <btn-primary variant="secondary" btn-text="se inscreva" (submit)="submit()" [disabled] = "newsLetterForm.invalid"></btn-primary>
+    </form>
 
 </section>
 
